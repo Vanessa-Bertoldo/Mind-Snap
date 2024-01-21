@@ -2,5 +2,10 @@
   <header class="header d-flex">
       <h2 class="ff-inter">Meu Mural</h2>
       <button routerLink="/adicionar" class="botao">Adicionar pensamento</button>
+      <div class="mural">
+        <div *ngFor="let pensamento of listPensamento">
+          <app-thought></app-thought>
+        </div>
+      </div>
   </header>
 </section>
