@@ -3,8 +3,9 @@
       <h2 class="ff-inter">Meu Mural</h2>
       <button routerLink="/adicionar" class="botao">Adicionar pensamento</button>
       <div class="mural">
+        <!-- O ngFor é uma diretiva do Angular para percorrer listas -->
         <div *ngFor="let pensamento of listPensamento">
-          <app-thought></app-thought>
+          <app-thought [pensamento]="pensamento"></app-thought>
         </div>
       </div>
   </header>
