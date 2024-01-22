@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { Pensamento } from '../thought';
 
 @Component({
   selector: 'app-thought',
@@ -13,8 +14,9 @@ export class ThoughtComponent implements OnInit {
     modelo: "modelo3"
   }
 
-  listPensamento = [
+  listPensamento : Pensamento[] = [
     {
+      id: 0,
       conteudo: "To tentando",
       autoria: "Vanessa Bert",
       modelo: "modelo3"
