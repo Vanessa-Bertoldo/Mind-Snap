@@ -1,5 +1,9 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit, Injectable } from '@angular/core';
 import { Pensamento } from '../thought';
+
+@Injectable({
+  providedIn: 'root'
+})
 
 @Component({
   selector: 'app-thought',

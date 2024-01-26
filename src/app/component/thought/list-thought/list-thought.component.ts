@@ -11,13 +11,12 @@ export class ListThoughtComponent implements OnInit {
 
   listPensamento : Pensamento[] = []
 
-  listaPensamentos: Pensamento[] = [];
-
   constructor(private service: PensamentoServiceService) { }
 
   ngOnInit(): void {
-    let list = this.service.listing()
-    console.log("LISTAR ", list)
+    this.service.listing().subscribe((listaPensamentos) => {
+      this.listPensamento = listaPensamentos
+    })
   }
 
 }
