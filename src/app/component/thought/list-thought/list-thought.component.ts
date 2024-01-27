@@ -15,6 +15,7 @@ export class ListThoughtComponent implements OnInit {
 
   ngOnInit(): void {
     this.service.listing().subscribe((list) => {
+      console.log("LIST: ", list)
       this.listPensamento = list
     })
   }

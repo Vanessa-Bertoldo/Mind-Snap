@@ -13,6 +13,7 @@ import { Pensamento } from '../thought';
 export class ThoughtComponent implements OnInit {
   //A notação Input serve para passarmos informações do componente pai "listarPensamento" para o componente "filho" pensamento
   @Input() pensamento = {
+    id: 0,
     conteudo: "To tentando",
     autoria: "Vanessa Bert",
     modelo: "modelo3"
