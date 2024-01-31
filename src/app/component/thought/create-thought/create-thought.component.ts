@@ -24,7 +24,7 @@ export class CreateThoughtComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  salvar(){
+  salvar(){ //ocorre o registro do pensanmnto na API
     this.service.register(this.pensamento).subscribe(() => {
       this.router.navigate(['/listagem'])
     })
