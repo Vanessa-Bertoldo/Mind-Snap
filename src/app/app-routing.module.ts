@@ -3,7 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { CreateThoughtComponent } from './component/thought/create-thought/create-thought.component';
 import { ListThoughtComponent } from './component/thought/list-thought/list-thought.component';
 import { DeleteThoughtComponent } from './component/thought/delete-thought/delete-thought.component';
-
+//Esse arquivo define a renderização dos componentes de acordo com as suas rotas
 const routes: Routes = [
   {
       //Se a URL for aberta será redirecionada para a roda de listagem
