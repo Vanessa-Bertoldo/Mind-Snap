@@ -20,7 +20,7 @@ const routes: Routes = [
       component: ListThoughtComponent
   },
   {
-    path: 'pensamento/excluirPensamento/:id',
+    path: 'pensamento/excluirPensamento/:id', //rota para encaminhar para o dialog de confirmação de exclusão
     component: DeleteThoughtComponent
   }
 ];
